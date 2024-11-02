@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Template</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Select a Template</h1>
+
+        <div class="content">
+            <div class="option-container">
+                <div class="template-option">
+                    <img src="img/Screenshot (1).png" alt="Template 1" class="template-image">
+                    <h2 class="sub-title">Certificate of Enrollment</h2>
+                    <p>template 1</p>
+                    <div class="submit">
+                        <button class="select-button" onclick="goToForm('home.html')">Select</button> <!-- Changed to home.html -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="option-container">
+                <div class="template-option">
+                    <img src="img/template2.jpg" alt="Template 2" class="template-image">
+                    <h2 class="sub-title">Template 2</h2>
+                    <p>A classic design for certificates.</p>
+                    <div class="submit">
+                        <button class="select-button" onclick="goToForm('form-page2.html')">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function goToForm(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

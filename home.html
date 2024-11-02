@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Page</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fill Out the Form</h2>
+        <form id="certificateForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="course">Course:</label>
+            <select id="course" required>
+                <option value="">Select a course</option>
+                <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science</option>
+                <option value="Bachelor of Arts in Communication">Bachelor of Arts in Communication</option>
+                <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology</option>
+                <option value="Bachelor of Science in Business Administration">Bachelor of Science in Business Administration</option>
+                <option value="Bachelor of Science in Civil Engineering">Bachelor of Science in Civil Engineering</option>
+            </select>
+
+            <label for="gradeYear">Grade Level:</label>
+            <input type="number" id="gradeYear" min="1" required>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" required>
+                <option value="">Select a semester</option>
+                <option value="First Semester">First Semester</option>
+                <option value="Second Semester">Second Semester</option>
+                <option value="Summer">Summer</option>
+            </select>
+
+            <label for="date">Date Issued:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit" class="printbutton">Update Certificate</button>
+            <a href="template.html">
+                <button type="button" class="back-button">Back</button>
+            </a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

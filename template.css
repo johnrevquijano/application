@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; /* Changed to Times New Roman */
+    transition: all 0.5s ease;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.6) url('img/2424870.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; 
+}
+
+.main-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5rem; 
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 4px 4px 6px #1e1c1c;
+    margin-bottom: 20px; /* Added space below the title */
+}
+
+.content {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.option-container {
+    margin: 10px; 
+    background-color: rgba(240, 230, 230, 0.288); 
+    border-radius: 10px; 
+    padding: 10px; 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 300px; 
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.3s ease; /* Add transition for scaling effect */
+}
+
+.template-option {
+    text-align: center; 
+    position: relative; 
+}
+
+.template-image {
+    width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+    filter: blur(1px); 
+    transition: filter 0.3s ease; 
+}
+
+.template-option:hover .template-image {
+    filter: blur(0); 
+}
+
+.option-container {
+    overflow: hidden; 
+}
+
+.option-container::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; 
+    left: 0;
+    right: 0;
+    height: 100%; 
+    background: rgba(77, 77, 81, 0.537); 
+    transition: transform 0.8s ease; 
+    transform: translateY(100%); 
+}
+
+.option-container:hover::before {
+    transform: translateY(0); 
+}
+
+.sub-title {
+    font-size: 1.5rem; 
+    color: #fff; 
+    position: relative; 
+    z-index: 1; 
+    margin-bottom: 15px; /* Added space below the subtitle */
+}
+
+.submit {
+    margin-top: 10px; 
+}
+
+.submit button {
+    padding: 10px 20px; 
+    color: #1e1c1c;
+    background-color: #b09778;
+    border-radius: 20px;
+    font-size: 1rem; 
+    border: none;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.submit button:hover {
+    background-color: #937970;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(147, 126, 112, 0.5);
+}
+
+.option-container:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}

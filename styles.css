@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; /* More formal font */
+    transition: all 0.3s ease; /* Smoother overall transitions */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6) url('img/2424870.jpg') center center fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+label {
+    color: rgb(108, 104, 104);
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Slightly more opaque for contrast */
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(63, 68, 87);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transitions */
+}
+
+.form-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 7.5in;
+    height: 9in;
+    background-color: white;
+}
+
+h2 {
+    font-size: 28px; /* Adjusted header size */
+    text-align: center; /* Center the header */
+    font-weight: bold; /* Make header bold for emphasis */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.top, .top1 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.top {
+    font-size: 14px; /* Adjusted size for a more formal look */
+}
+
+.top1 {
+    font-size: 20px; /* Adjusted size for a more formal look */
+}
+
+.border {
+    border: none;
+    height: 6px;
+    background: linear-gradient(to top, black 50%, rgb(137, 135, 135) 50%);
+    width: 78%;
+    margin-top: 5px;
+}
+
+.sided {
+    display: flex;
+    width: 78.5%;
+    margin-top: 3px;
+}
+
+.kilid {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 1px;
+}
+
+.sidetext {
+    display: flex;
+    justify-content: space-between;
+    width: 78.5%;
+    margin-top: 5px;
+}
+
+.address {
+    font-size: 8px;
+    text-align: left;
+    margin-left: 1px;
+}
+
+.contact-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1px;
+}
+
+.email, .telefax {
+    font-size: 8px;
+}
+
+.side-image, .side-image1 {
+    width: 105px;
+    height: auto;
+    margin: 0 30px;
+}
+
+.below {
+    text-align: center;
+    font-size: 10px;
+}
+
+.sidetext1 {
+    display: flex;
+    justify-content: right;
+    width: 60%;
+    margin-top: 5px;
+}
+
+.contact-info1 {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1px;
+}
+
+.telefax1 {
+    margin-top: 75px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.under {
+    display: flex;
+    justify-content: right;
+    width: 54.5%;
+}
+
+.under1 {
+    text-align: right;
+    display: flex;
+    margin-right: 1px;
+}
+
+.under2 {
+    margin-top: 0.5px;
+    font-size: 11.5px;
+}
+
+.center-indent {
+    text-align: justify;
+    text-indent: 40px;
+    width: 78%;
+    margin: 50px auto 0;
+}
+
+/* Form styles */
+.form-container {
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container label {
+    margin: 5px 0 1px;
+    font-weight: bold;
+}
+
+.form-container input, .form-container select {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+.form-container input:focus, .form-container select:focus {
+    border-color: #937970; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(147, 126, 112, 0.5); /* Add shadow on focus */
+}
+
+.printbutton, .back-button, .form-container button {
+    margin-top: 8px;
+    padding: 10px 20px;
+    background-color: #b09778;
+    color: rgb(43, 41, 41);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Combined transitions */
+    font-size: 14px;
+}
+
+.printbutton:hover, .back-button:hover, .form-container button:hover {
+    background-color: #937970;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 15px rgba(147, 126, 112, 0.5); /* Shadow on hover */
+}
+
+/* Print Styles */
+@media print {
+    body {
+        width: auto;
+        height: auto;
+        overflow: visible;
+        font-size: 0.8em; /* Adjust base font size for printing */
+    }
+    .whole {
+        padding: 0;
+        font-size: 0.8em; /* Ensure the entire letter is smaller */
+    }
+
+    .border {
+        display: flex;
+        height: 6px;
+        background: linear-gradient(to top, black 50%, rgb(137, 135, 135) 50%);
+        width: 78%;
+        margin: 5px auto;
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller header size for print */
+    }
+
+    .below {
+        font-size: 8px; /* Smaller size for additional text */
+    }
+
+    .mm {
+        display: none;
+    }
+
+    .printbutton,
+    .back-button {
+        display: none;
+    }
+
+    /* Further adjust specific elements if needed */
+    label, input, select {
+        font-size: 0.8em; /* Make labels and inputs smaller */
+    }
+
+    .contact-info, .address, .email, .telefax, .telefax1, .under2 {
+        font-size: 0.8em; /* Reduce font size for contact info */
+    }
+
+    /* Add any other adjustments for other elements as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .form-container {
+        width: 85%; /* Slightly smaller form container for mobile */
+        padding: 8px; /* Reduced padding */
+        border-radius: 6px;
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller header size for mobile */
+    }
+
+    label {
+        font-size: 13px; /* Compact label font */
+    }
+
+    input, select {
+        font-size: 13px;
+        padding: 8px; /* Compact padding for mobile */
+        width: 100%; /* Full-width inputs */
+    }
+
+    .printbutton, .back-button, .form-container button {
+        font-size: 14px;
+        padding: 10px 16px; /* Adjust button padding for mobile */
+    }
+
+    .whole {
+        width: 85%; /* Make the main container narrower */
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .side-image, .side-image1 {
+        width: 70px; /* Reduce image size for mobile */
+    }
+
+    .top, .top1, .kilid, .address, .email, .telefax, .telefax1, .under2, .below {
+        font-size: 0.9em; /* Slightly reduced font sizes */
+    }
+}
